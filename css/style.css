@@ -1,0 +1,83 @@
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background: #dedede;
+}
+.title{
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: 'Roboto',Arial, sans-serif;
+}
+.weather__block{
+	font-family: 'Roboto',Arial, sans-serif;
+	position: relative;
+}
+.item__wrapper{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #eff9fb;
+	padding: 10px 0 20px;
+	border-radius: 4px; 
+}
+.item__calendar{
+	font-size: 11px;
+	margin-bottom: 8px;
+}
+.item__day{
+	font-size: 20px;
+}
+.item__temperature_day{
+	font-size: 20px;
+}
+.item__temperature_night{
+	font-size: 12px;
+	color:#888;
+}
+.item__precipitation{
+	font-size: 14px;
+	color:#888;
+	text-transform: lowercase;
+	margin-top: 15px;
+}
+.item__picture{
+	background-image: url(../img/weather-spray.jpg);
+	height: 60px;
+	width: 60px;
+}
+.swiper__prev,
+.swiper__next{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top:50%;
+  transform:translateY(-50%);
+  outline: none;
+}
+.swiper__prev::before,
+.swiper__next::before{
+	content: '';
+	border-top: 3px solid #000;
+	border-left: 3px solid #000;
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	top:25%;
+}
+.swiper__prev::before{
+  transform: rotate(-45deg);
+  left:25%;
+}
+.swiper__next::before{
+	transform: rotate(135deg);
+	right:25%;
+}
+.swiper__next{
+  right: -25px;
+}
+.swiper__prev{
+  left:-25px;
+}
